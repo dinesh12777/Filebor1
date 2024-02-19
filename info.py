@@ -113,7 +113,7 @@ name = str(environ.get('name', 'LazyPrincess'))
 PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
 if 'DYNO' in environ:
     ON_HEROKU = True
-    APP_NAME = str(getenv('APP_NAME'))
+    APP_NAME = str(getenv('svnhbot'))
 
 else:
     ON_HEROKU = False
